@@ -8,7 +8,7 @@ public class MovePlayer : MonoBehaviour
     [SerializeField] private GameObject levelObject;
     private float jumpCooldown  = 0.5f;
     private float jumpTimer;
-    private bool IsGrounded;
+    public bool IsGrounded { get; private set; }
     private Rigidbody2D rb;
     void Start()
     {

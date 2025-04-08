@@ -33,8 +33,6 @@ public class PlayerAnimation : MonoBehaviour
         {
             spriteRenderer.flipX = horizontalInput < 0;
         }
-
-    // Определяем состояния
         bool isJumping = !movePlayer.IsGrounded;
         bool isRunning = Mathf.Abs(horizontalInput) > 0.1f && !isJumping;
         bool isIdle = movePlayer.IsGrounded && !isRunning;

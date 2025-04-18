@@ -113,7 +113,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         settingsPanel.SetActive(IsMenuOpen);
         
         // Опционально: Пауза игры
-       // Time.timeScale = IsMenuOpen ? 0f : 1f;
+       Time.timeScale = IsMenuOpen ? 0f : 1f;
         
        // Опционально: Показать/скрыть курсор
        //Cursor.visible = IsMenuOpen;
